@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TYNATO – Empowering Innovation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in { opacity:0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.show { opacity:1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-sans bg-black text-white scroll-smooth">
+
+  <nav class="fixed w-full bg-black shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <div class="flex items-center text-2xl font-bold text-blue-600">
+  <img src="src/TYNATO_LOGO.png" alt="TYNATO_LOGO" class="h-8 mr-2">
+  TYNATO
+</div>
+
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-blue-600 font-medium">About</a>
+        <a href="#services" class="hover:text-blue-600 font-medium">Services</a>
+        <a href="#why" class="hover:text-blue-600 font-medium">Why Choose Us</a>
+        <a href="#contact" class="hover:text-blue-600 font-medium">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white-800 focus:outline-none">☰</button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-black shadow-md">
+      <a href="#about" class="block px-4 py-2 hover:bg-white-100">About</a>
+      <a href="#services" class="block px-4 py-2 hover:bg-white-100">Services</a>
+      <a href="#why" class="block px-4 py-2 hover:bg-white-100">Why Choose Us</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-white-100">Contact</a>
+    </div>
+  </nav>
+
+  <section class="relative bg-gray-900 text-white min-h-[65vh] flex items-center justify-center text-center px-4">
+  <div class="fade-in z-10">
+    <img src="src/TYNATO_LOGO.png" alt="TYNATO_LOGO" class="mx-auto mb-6 h-28 md:h-40">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      TYNATO – Empowering Innovation with Technology
+    </h1>
+    <p class="text-lg md:text-2xl mb-8">
+      Blending AI, Blockchain, Website Development, App Development, EMR, and Cybersecurity to transform your business digitally.
+    </p>
+    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+      Connect with Us
+    </a>
+  </div>
+  <div class="absolute inset-0 bg-black opacity-40"></div>
+</section>
+
+
+  <section id="about" class="py-20">
+    <div class="max-w-5xl mx-auto text-center fade-in">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Who We Are</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 fade-in">
+          <p class="mb-3">At TYNATO, we believe technology is the bridge between imagination and reality. We provide cutting-edge solutions that blend Artificial Intelligence, Blockchain, Website Development, Electronic Medical Records (EMR), and Cybersecurity to help businesses scale, innovate, and transform digitally.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20">
+    <div class="max-w-6xl mx-auto text-center fade-in">
+      <h2 class="text-3xl font-bold text-blue-600 mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 fade-in">
+          <h3 class="text-xl font-bold mb-3">🤖 Artificial Intelligence (AI)</h3>
+          <p class="mb-3">We build AI-powered solutions that drive automation, efficiency, and smarter decision-making.</p>
+          <ul class="list-disc list-inside text-white-700 text-sm">
+            <li>AI chatbots & virtual assistants</li>
+            <li>Predictive analytics & business intelligence</li>
+            <li>Computer vision & NLP integration</li>
+            <li>AI-driven digital marketing solutions</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 fade-in">
+          <h3 class="text-xl font-bold mb-3">⛓ Blockchain Technology</h3>
+          <p class="mb-3">Unlock trust, transparency, and security with our blockchain services.</p>
+          <ul class="list-disc list-inside text-white-700 text-sm">
+            <li>Smart contract development</li>
+            <li>Decentralized applications (DApps)</li>
+            <li>Supply chain & asset tracking systems</li>
+            <li>Blockchain consulting & integration</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 fade-in">
+          <h3 class="text-xl font-bold mb-3">💻 Website Development</h3>
+          <p class="mb-3">Your website is your digital identity – we make it powerful, secure, and user-friendly.</p>
+          <ul class="list-disc list-inside text-white-700 text-sm">
+            <li>Custom website & web app development</li>
+            <li>Secure e-commerce solutions</li>
+            <li>SEO & performance optimization</li>
+            <li>Modern, responsive, and scalable designs</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 fade-in">
+          <h3 class="text-xl font-bold mb-3">📱 Mobile App Development</h3>
+          <p class="mb-3">Your app is your brand in your customer’s pocket – and we make it intuitive, secure, and high-performing.</p>
+          <ul class="list-disc list-inside text-white-700 text-sm">
+            <li>Custom iOS & Android app development</li>
+            <li>Secure, scalable backend integration</li>
+            <li>UI/UX design for seamless user journeys</li>
+            <li>Performance tuning & cross-platform optimization</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 fade-in">
+          <h3 class="text-xl font-bold mb-3">🏥 Electronic Medical Records (EMR)</h3>
+          <p class="mb-3">Revolutionizing healthcare with secure, accessible, and intelligent EMR solutions.</p>
+          <ul class="list-disc list-inside text-white-700 text-sm">
+            <li>Cloud-based EMR platforms</li>
+            <li>Secure patient data storage & retrieval</li>
+            <li>Prescription & billing automation</li>
+            <li>Integration with insurance & healthcare systems</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 fade-in">
+          <h3 class="text-xl font-bold mb-3">🔐 Cybersecurity Solutions</h3>
+          <p class="mb-3">Protect digital assets, safeguard data, and ensure compliance.</p>
+          <ul class="list-disc list-inside text-white-700 text-sm">
+            <li>Vulnerability assessment & penetration testing (VAPT)</li>
+            <li>Security Operations Center (SOC) monitoring</li>
+            <li>Cloud & application security solutions</li>
+            <li>Incident response & threat intelligence</li>
+            <li>Compliance (ISO, GDPR, HIPAA, PCI-DSS)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="py-20 bg-white-50">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Why Choose TYNATO?</h2>
+      <ul class="text-lg list-disc list-inside text-white-700 space-y-2">
+        <li>Innovation-driven solutions</li>
+        <li>End-to-end security and scalability</li>
+        <li>Industry-focused expertise</li>
+        <li>Future-ready technology stack</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 fade-in">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Contact Us</h2>
+      <form onsubmit="submitForm(event)" class="space-y-4 text-left">
+        <input type="text" id="name" placeholder="Your Name" required class="w-full p-3 bg-gray-900 border rounded-lg">
+        <input type="email" id="email" placeholder="Your Email" required class="w-full p-3 bg-gray-900 border rounded-lg">
+        <textarea id="message" rows="5" placeholder="Your Message" required class="w-full p-3  bg-gray-900 border rounded-lg"></textarea>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition w-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-2 text-center">
+    <p>&copy; 2025 TYNATO. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Toggle menu on button click
+    menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close menu when any link is clicked
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden'); // hide the menu
+    });
+    });
+
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+    });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      alert(`Thank you, ${name}! Your message has been sent.`);
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
