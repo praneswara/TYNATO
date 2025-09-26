@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/praneswara/TYNATO/static/css/main.9afd0cf4.css",
+    "main.js": "/praneswara/TYNATO/static/js/main.749381d0.js",
+    "index.html": "/praneswara/TYNATO/index.html",
+    "main.9afd0cf4.css.map": "/praneswara/TYNATO/static/css/main.9afd0cf4.css.map",
+    "main.749381d0.js.map": "/praneswara/TYNATO/static/js/main.749381d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9afd0cf4.css",
+    "static/js/main.749381d0.js"
+  ]
+}
