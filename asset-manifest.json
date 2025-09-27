@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/TYNATO/static/css/main.9afd0cf4.css",
-    "main.js": "/TYNATO/static/js/main.be866aa4.js",
+    "main.js": "/TYNATO/static/js/main.d0102052.js",
     "index.html": "/TYNATO/index.html",
     "main.9afd0cf4.css.map": "/TYNATO/static/css/main.9afd0cf4.css.map",
-    "main.be866aa4.js.map": "/TYNATO/static/js/main.be866aa4.js.map"
+    "main.d0102052.js.map": "/TYNATO/static/js/main.d0102052.js.map"
   },
   "entrypoints": [
     "static/css/main.9afd0cf4.css",
-    "static/js/main.be866aa4.js"
+    "static/js/main.d0102052.js"
   ]
 }
