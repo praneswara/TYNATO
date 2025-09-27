@@ -6,28 +6,28 @@ const slides = [
     title: "Welcome to TYNATO",
     description: "We bring innovation with technology.",
     buttonText: "Learn More",
-    buttonLink: "/#/about",
+    buttonLink: "/TYNATO/#/about",
   },
   {
     image: process.env.PUBLIC_URL + "/images/tynato2.jpg",
     title: "Our Services",
     description: "We provide AI, Cloud, and Cybersecurity solutions.",
     buttonText: "Explore Services",
-    buttonLink: "/#/services",
+    buttonLink: "/TYNATO/#/services",
   },
   {
     image: process.env.PUBLIC_URL + "/images/tynato3.jpg",
     title: "Join Our Team",
     description: "Grow your career with TYNATO.",
     buttonText: "View Openings",
-    buttonLink: "/#/careers",
+    buttonLink: "/TYNATO/#/careers",
   },
   {
     image: process.env.PUBLIC_URL + "/images/tynato2.jpg",
     title: "Contact Us",
     description: "Reach Our Team To Grow Your Business",
     buttonText: "Contact Us",
-    buttonLink: "/#/contact",
+    buttonLink: "TYNATO/#/contact",
   },
 ];
 
