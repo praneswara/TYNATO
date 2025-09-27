@@ -22,7 +22,6 @@ export const Router = ({ children }) => {
 
   // Split path into segments for params
   const segments = path.split("/");
-  const currentPath = segments[0];
   const params = segments.slice(1);
 
   return children({ currentPath: path, params });

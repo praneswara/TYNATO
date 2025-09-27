@@ -149,8 +149,30 @@ const servicesData = {
     ],
     bannerImage: "/images/CC.jpg",
   },
-
-  // … repeat the same structure for ecommerce, iot, blockchain, software, uiux, devops
+  EMR: {
+    title: "Electronic Medical Records",
+    sections: [
+      {
+        title: "Patient Data Management",
+        content:
+          "Securely store, access, and update patient information including demographics, medical history, allergies, and prescriptions in a centralized system.",
+        image: "/images/patient-data.png",
+      },
+      {
+        title: "Clinical Workflow & Documentation",
+        content:
+          "Streamline clinical workflows with structured templates for progress notes, treatment plans, lab results, and diagnostic reports, ensuring accuracy and compliance.",
+        image: "/images/workflow.png",
+      },
+      {
+        title: "Interoperability & Integrations",
+        content:
+          "Seamlessly integrate with labs, pharmacies, imaging systems, and other healthcare applications using HL7/FHIR standards for efficient data exchange and collaboration.",
+        image: "/images/integrations.png",
+      },
+    ],
+    bannerImage: "/images/emr-banner.jpg", // main top image
+  },
 };
 
 export default servicesData;
