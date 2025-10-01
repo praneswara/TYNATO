@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TYNATO - Leading IT services and product development company specializing in software development, cloud solutions, mobile apps, and UI/UX design.">
+    <meta name="keywords" content="IT services, software development, cloud solutions, mobile apps, UI/UX design, product development">
+    <meta name="author" content="TYNATO">
+    <meta property="og:title" content="TYNATO - IT Services & Product Development">
+    <meta property="og:description" content="Transform your business with cutting-edge IT solutions and innovative product development.">
+    <meta property="og:type" content="website">
+    <title>TYNATO - Smart, scalable & Secure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #667eea;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        /* .smooth-scroll {
+            scroll-behavior: smooth;
+        } */
+        
+        #mobile-menu {
+            transition: max-height 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-black shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="ml-2 text-2xl font-bold text-white" style="font-family: 'Poppins', sans-serif;">T Y N A T O</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link active text-gray-300 hover:text-purple-600 font-medium">Home</a>
+                    <a href="#services" class="nav-link text-gray-300 hover:text-purple-600 font-medium">Service</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-purple-600 font-medium">About Us</a>
+                    <a href="#portfolio" class="nav-link text-gray-300 hover:text-purple-600 font-medium">Portfolio</a>
+                    <a href="#testimonials" class="nav-link text-gray-300 hover:text-purple-600 font-medium">Testimonials</a>
+                    <a href="#careers" class="nav-link text-gray-300 hover:text-purple-600 font-medium">Careers</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-purple-600 font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home" class="block px-3 py-2 text-gray-300 hover:bg-purple-50 rounded">Home</a>
+                    <a href="#services" class="block px-3 py-2 text-gray-300 hover:bg-purple-50 rounded">Service</a>
+                    <a href="#about" class="block px-3 py-2 text-gray-300 hover:bg-purple-50 rounded">About Us</a>
+                    <a href="#portfolio" class="block px-3 py-2 text-gray-300 hover:bg-purple-50 rounded">Portfolio</a>
+                    <a href="#testimonials" class="block px-3 py-2 text-gray-300 hover:bg-purple-50 rounded">Testimonials</a>
+                    <a href="#careers" class="block px-3 py-2 text-gray-300 hover:bg-purple-50 rounded">Careers</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-300 hover:bg-purple-50 rounded">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-24 pb-20 bg-gradient-to-br from-black to-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-300 mb-6 leading-tight">
+                    Transform Your Business with <span class="text-purple-600">Innovation</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 mb-8 max-w-3xl mx-auto px-4">
+                    TYNATO delivers cutting-edge IT services and product development solutions that drive growth and efficiency for businesses worldwide. We combine technical excellence with strategic thinking to create transformative digital experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center px-4">
+                    <a href="#services" class="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition text-center">
+                        Explore Services
+                    </a>
+                    <a href="#contact" class="text-purple-600 px-8 py-3 rounded-lg font-semibold border-2 border-purple-600 hover:bg-blue-50 transition text-center">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/fast-delivery.png" alt="fast-delivery"></div>
+                    <h3 class="text-xl font-bold mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600">Agile methodologies ensure rapid project completion without compromising quality</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/innovation.png" alt="fast-delivery"></div>
+                    <h3 class="text-xl font-bold mb-2">Innovation First</h3>
+                    <p class="text-gray-600">Cutting-edge solutions using the latest technologies and industry best practices</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/client-focus.png" alt="fast-delivery"></div>
+                    <h3 class="text-xl font-bold mb-2">Client Focused</h3>
+                    <p class="text-gray-600">Tailored solutions designed to meet your unique business needs and goals</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/global-reach.png" alt="fast-delivery"></div>
+                    <h3 class="text-xl font-bold mb-2">Global Reach</h3>
+                    <p class="text-gray-600">Serving clients across 25+ countries with 24/7 support and expertise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">100+</div>
+                    <p class="text-blue-100">Projects Delivered</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">30+</div>
+                    <p class="text-blue-100">Happy Clients</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">25+</div>
+                    <p class="text-blue-100">Team Members</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">3+</div>
+                    <p class="text-blue-100">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-br from-black to-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-300 mb-4">Our  <span class="text-purple-600">Services</span></h2>
+                <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto px-4">
+                    Comprehensive IT solutions designed to elevate your business to new heights. We offer end-to-end services that cover every aspect of your digital transformation journey.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-gray-50 p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/software-development.png" alt="fast-delivery"></div>
+                    <h3 class="flex justify-center text-2xl font-bold mb-3">Software Development</h3>
+                    <p class="text-gray-600 mb-4">
+                        Custom software solutions built with modern technologies and best practices. From enterprise applications to microservices, we deliver scalable, maintainable, and high-performance code that grows with your business.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Web Application Development</li>
+                        <li>• Enterprise Software Solutions</li>
+                        <li>• RESTful API Development</li>
+                        <li>• Legacy System Modernization</li>
+                        <li>• Custom CRM & ERP Systems</li>
+                        <li>• SaaS Product Development</li>
+                    </ul>
+                </article>
+                <article class="bg-gray-50 p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/cloud-solutions.png" alt="fast-delivery"></div>
+                    <h3 class="flex justify-center text-2xl font-bold mb-3">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-4">
+                        Leverage the power of cloud computing with our expertise in AWS, Azure, and Google Cloud. We help you migrate, optimize, and scale effortlessly while reducing costs and improving performance.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Cloud Migration & Strategy</li>
+                        <li>• Infrastructure as Code (IaC)</li>
+                        <li>• DevOps & CI/CD Implementation</li>
+                        <li>• Cloud Security & Compliance</li>
+                        <li>• Serverless Architecture</li>
+                        <li>• Multi-Cloud Management</li>
+                    </ul>
+                </article>
+                <article class="bg-gray-50 p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/mobileapp-dev.png" alt="fast-delivery"></div>
+                    <h3 class="flex justify-center text-2xl font-bold mb-3">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-4">
+                        Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android devices. We build apps that users love and that drive business results.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Native iOS Development (Swift)</li>
+                        <li>• Native Android Development (Kotlin)</li>
+                        <li>• React Native Applications</li>
+                        <li>• Flutter Development</li>
+                        <li>• App Store Optimization</li>
+                        <li>• Mobile App Maintenance</li>
+                    </ul>
+                </article>
+                <article class="bg-gray-50 p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/uiux.png" alt="fast-delivery"></div>
+                    <h3 class="flex justify-center text-2xl font-bold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Beautiful, intuitive interfaces that users love. Our design team creates experiences that combine aesthetics with functionality, ensuring your digital products are both visually stunning and highly usable.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• User Research & Analysis</li>
+                        <li>• Wireframing & Prototyping</li>
+                        <li>• Visual Design & Branding</li>
+                        <li>• Usability Testing</li>
+                        <li>• Design System Creation</li>
+                        <li>• Accessibility Compliance</li>
+                    </ul>
+                </article>
+                <article class="bg-gray-50 p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/cybersecurity.png" alt="fast-delivery"></div>
+                    <h3 class="flex justify-center text-2xl font-bold mb-3">Cybersecurity</h3>
+                    <p class="text-gray-600 mb-4">
+                        Protect your digital assets with comprehensive security solutions. We identify vulnerabilities, implement robust protection measures, and ensure your systems are compliant with industry standards.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Security Audits & Assessments</li>
+                        <li>• Penetration Testing</li>
+                        <li>• Compliance Management (GDPR, HIPAA,NIST,SOC2)</li>
+                        <li>• Incident Response Planning</li>
+                        <li>• Network Security</li>
+                        <li>• Security Training Programs</li>
+                    </ul>
+                </article>
+                <article class="bg-gray-50 p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="flex justify-center text-blue-600 text-4xl mb-4"><img src="./images/ai.png" alt="fast-delivery"></div>
+                    <h3 class="flex justify-center text-2xl font-bold mb-3">Data Analytics & AI</h3>
+                    <p class="text-gray-600 mb-4">
+                        Turn data into actionable insights with advanced analytics and machine learning. Our solutions help you make informed decisions, predict trends, and automate complex business processes.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Business Intelligence Solutions</li>
+                        <li>• Data Visualization Dashboards</li>
+                        <li>• Predictive Analytics</li>
+                        <li>• Machine Learning Models</li>
+                        <li>• Natural Language Processing</li>
+                        <li>• Computer Vision Solutions</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-300 mb-4">Technology Stack</h2>
+                <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto px-4">
+                    We work with cutting-edge technologies to deliver robust and scalable solutions
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">⚛️</div>
+                    <h4 class="font-bold">React</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🟢</div>
+                    <h4 class="font-bold">Node.js</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🐍</div>
+                    <h4 class="font-bold">Python</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">☁️</div>
+                    <h4 class="font-bold">AWS</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🔷</div>
+                    <h4 class="font-bold">Azure</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🐳</div>
+                    <h4 class="font-bold">Docker</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">☸️</div>
+                    <h4 class="font-bold">Kubernetes</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🗄️</div>
+                    <h4 class="font-bold">MongoDB</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🐘</div>
+                    <h4 class="font-bold">PostgreSQL</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🔺</div>
+                    <h4 class="font-bold">GraphQL</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">📘</div>
+                    <h4 class="font-bold">TypeScript</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🔥</div>
+                    <h4 class="font-bold">Firebase</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- CTA Section -->
+    <section class="py-20 bg-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Start Your Digital Transformation?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto px-4">
+                Let's turn your vision into reality. Our team is ready to help you build innovative solutions that drive business growth.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
+                    Start Your Project
+                </a>
+                <a href="#services" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-black to-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-200 mb-4">About TYNATO</h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+                    "Building the future of technology, one solution at a time, founded on the principles of being smart, scalable, and secure."
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl text-gray-200 font-bold mb-4">Our Mission</h3>
+                    <p class="text-gray-300 mb-6">
+                        At TYNATO, we believe technology should empower businesses, not complicate them. Our mission is to deliver innovative IT solutions that drive real business value, helping organizations of all sizes achieve their goals through digital transformation.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        We combine technical excellence with deep industry knowledge to create solutions that are not just functional, but transformative. Every project we undertake is an opportunity to push boundaries and exceed expectations.
+                    </p>
+                    <p class="text-gray-300">
+                        Our commitment extends beyond project delivery. We build lasting partnerships with our clients, providing ongoing support and evolving our solutions as their needs grow and change.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl text-gray-200 font-bold mb-4">Our Values</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-blue-600 font-bold text-xl mr-3">01</span>
+                            <div>
+                                <h4 class="text-gray-200 font-bold mb-1">Innovation & Creativity</h4>
+                                <p class="text-gray-300">We constantly explore new technologies and methodologies to stay ahead of the curve and deliver cutting-edge solutions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-600 font-bold text-xl mr-3">02</span>
+                            <div>
+                                <h4 class="text-gray-200 font-bold mb-1">Integrity & Transparency</h4>
+                                <p class="text-gray-300">Honesty and transparency guide every client interaction and business decision, building trust through open communication.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-600 font-bold text-xl mr-3">03</span>
+                            <div>
+                                <h4 class="text-gray-200 font-bold mb-1">Excellence & Quality</h4>
+                                <p class="text-gray-300">We maintain the highest standards in code quality, design principles, and project delivery, never compromising on quality.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-600 font-bold text-xl mr-3">04</span>
+                            <div>
+                                <h4 class="text-gray-200 font-bold mb-1">Collaboration & Partnership</h4>
+                                <p class="text-gray-300">Success comes from working together with clients as true partners, understanding their vision and goals deeply.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-600 font-bold text-xl mr-3">05</span>
+                            <div>
+                                <h4 class="text-gray-200 font-bold mb-1">Continuous Learning</h4>
+                                <p class="text-gray-300">We invest in our team's growth and stay updated with the latest industry trends, tools, and best practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR JOURNEY -->
+    <section>
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8 sm:p-12 shadow-md mb-16">
+                <h3 class="text-2xl font-bold mb-8 text-center">Our Journey</h3>
+                <div class="space-y-8">
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                            2022
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">The Foundation</h4>
+                            <p class="text-gray-600">TYNATO began its journey in India with two freelance members. We laid the groundwork for our future by successfully completing our initial projects and building a strong foundation.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                            2023
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Growth in the Middle East</h4>
+                            <p class="text-gray-600">We expanded our operations to Dubai, focusing on client acquisition and delivering successful projects. Our dedication resulted in a portfolio of over five happy clients who achieved significant growth with our support.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                            2024
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Expansion into the USA</h4>
+                            <p class="text-gray-600">TYNATO's presence grew as we established ourselves in the United States. We gained over ten new clients and successfully delivered numerous projects, further solidifying our reputation for excellence.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
+                            2025
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Global Reach and Innovation</h4>
+                            <p class="text-gray-600">This year, we are focused on global expansion and innovation. We are launching a new innovation hub in India and extending our reach across three continents: Africa, the UAE, and the USA. Our team has grown to over 50 members globally, enabling us to provide continuous support and groundbreaking solutions.</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </section>
+   
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    Find answers to common questions about our services and processes
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">How long does a typical project take?</h3>
+                    <p class="text-gray-600">Project timelines vary based on complexity and scope. A simple mobile app might take 8-12 weeks, while a complex enterprise solution could take 6-12 months. We provide detailed timelines during the planning phase and keep you updated throughout development.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">What is your development process?</h3>
+                    <p class="text-gray-600">We follow an agile methodology with regular sprints, continuous feedback, and iterative development. This includes discovery, design, development, testing, deployment, and ongoing support phases. You'll be involved at every stage with regular demos and updates.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">Do you provide post-launch support?</h3>
+                    <p class="text-gray-600">Yes! We offer comprehensive maintenance and support packages including bug fixes, security updates, performance optimization, and feature enhancements. Our support team is available 24/7 to ensure your solution runs smoothly.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">How much does a custom software project cost?</h3>
+                    <p class="text-gray-600">Costs vary significantly based on project requirements, complexity, and timeline. Simple projects start around $1000, while enterprise solutions can range from $100,000+. We provide detailed quotes after understanding your specific needs during our discovery phase.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">Can you work with our existing team?</h3>
+                    <p class="text-gray-600">Absolutely! We excel at collaborating with in-house teams. We can augment your team with specialized skills, take full ownership of specific modules, or work alongside your developers using your preferred tools and processes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">Do you sign NDAs?</h3>
+                    <p class="text-gray-600">Yes, we're happy to sign non-disclosure agreements before discussing your project details. We understand the importance of confidentiality and take protecting your intellectual property very seriously.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Portfolio</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    Explore some of our recent projects that showcase our expertise and commitment to excellence
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-6xl">
+                        🏦
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">FinTech Banking Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed a comprehensive digital banking solution with real-time transactions, AI-powered fraud detection, and seamless mobile experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-6xl">
+                        🏥
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Healthcare Management System</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built an integrated healthcare platform connecting patients, doctors, and hospitals with telemedicine capabilities and electronic health records.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Django</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Azure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white text-6xl">
+                        🛒
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Marketplace</h3>
+                        <p class="text-gray-600 mb-4">
+                            Created a scalable multi-vendor marketplace with advanced search, personalized recommendations, and seamless payment integration.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Next.js</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-6xl">
+                        📚
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">EdTech Learning Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed an interactive online learning platform with live classes, assessments, progress tracking, and gamification features.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">WebRTC</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-white text-6xl">
+                        🚗
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fleet Management Solution</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built a comprehensive IoT-enabled fleet management system with GPS tracking, route optimization, and predictive maintenance.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">IoT</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white text-6xl">
+                        📱
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Social Media Mobile App</h3>
+                        <p class="text-gray-600 mb-4">
+                            Created a feature-rich social networking app with real-time messaging, stories, live streaming, and AI-powered content moderation.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">React Native</span>
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">GraphQL</span>
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Portfolio</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    Explore some of our recent projects that showcase our expertise and commitment to excellence
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-6xl">
+                        🏦
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">FinTech Banking Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed a comprehensive digital banking solution with real-time transactions, AI-powered fraud detection, and seamless mobile experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-6xl">
+                        🏥
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Healthcare Management System</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built an integrated healthcare platform connecting patients, doctors, and hospitals with telemedicine capabilities and electronic health records.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Django</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Azure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white text-6xl">
+                        🛒
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Marketplace</h3>
+                        <p class="text-gray-600 mb-4">
+                            Created a scalable multi-vendor marketplace with advanced search, personalized recommendations, and seamless payment integration.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Next.js</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-6xl">
+                        📚
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">EdTech Learning Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed an interactive online learning platform with live classes, assessments, progress tracking, and gamification features.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">WebRTC</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-white text-6xl">
+                        🚗
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fleet Management Solution</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built a comprehensive IoT-enabled fleet management system with GPS tracking, route optimization, and predictive maintenance.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">IoT</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white text-6xl">
+                        📱
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Social Media Mobile App</h3>
+                        <p class="text-gray-600 mb-4">
+                            Created a feature-rich social networking app with real-time messaging, stories, live streaming, and AI-powered content moderation.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">React Native</span>
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">GraphQL</span>
+                            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    Don't just take our word for it. Here's what our clients say about working with us
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "TYNATO transformed our legacy system into a modern, cloud-based solution. Their expertise and professionalism are unmatched. The team was responsive, innovative, and delivered beyond our expectations."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">John Martinez</h4>
+                            <p class="text-gray-500 text-sm">CTO, TechFlow Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Working with TYNATO on our mobile app was a game-changer. They understood our vision perfectly and delivered a product that our users absolutely love. Highly recommended!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Sarah Williams</h4>
+                            <p class="text-gray-500 text-sm">Founder, HealthConnect</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "The team's technical expertise and commitment to quality are exceptional. They helped us scale our infrastructure seamlessly and improved our system performance by 300%."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Michael Brown</h4>
+                            <p class="text-gray-500 text-sm">VP Engineering, DataCore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "TYNATO's UI/UX team created a beautiful and intuitive interface for our platform. User engagement increased by 250% after the redesign. Absolutely fantastic work!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Lisa Anderson</h4>
+                            <p class="text-gray-500 text-sm">Product Manager, ShopEasy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Their cybersecurity audit identified critical vulnerabilities we weren't aware of. The team provided comprehensive solutions and ongoing support. We feel much more secure now."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Santhos Bhuvaneshwari</h4>
+                            <p class="text-gray-500 text-sm">CTO, Commacards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "They provided us with crucial intelligence on emerging cyber threats and a clear action plan to fortify our systems. Thanks to their guidance and proactive support, we now have a robust defense against cybercrime and are able to operate with peace of mind."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Munesh Dutt</h4>
+                            <p class="text-gray-500 text-sm">Deputy Director, Indian Cyber Crime Coordination Centre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Development Process</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    We follow a proven methodology to ensure project success and client satisfaction
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-3">Discovery & Planning</h3>
+                    <p class="text-gray-600">
+                        We start by understanding your business goals, requirements, and challenges. Our team conducts thorough research and creates a detailed project roadmap.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-3">Design & Prototype</h3>
+                    <p class="text-gray-600">
+                        Our designers create wireframes and interactive prototypes. We refine the design based on your feedback to ensure it meets your vision perfectly.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-3">Development & Testing</h3>
+                    <p class="text-gray-600">
+                        Our developers build your solution using agile methodologies. We conduct rigorous testing at every stage to ensure quality and performance.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-bold mb-3">Launch & Support</h3>
+                    <p class="text-gray-600">
+                        We handle the deployment and provide comprehensive training. Our support team is always available to help you succeed post-launch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    Our expertise spans across multiple industries, delivering tailored solutions for diverse business needs
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">🏦</div>
+                    <h4 class="font-bold">Finance & Banking</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">🏥</div>
+                    <h4 class="font-bold">Healthcare</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">🛒</div>
+                    <h4 class="font-bold">E-Commerce</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">📚</div>
+                    <h4 class="font-bold">Education</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">🏭</div>
+                    <h4 class="font-bold">Manufacturing</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">🚗</div>
+                    <h4 class="font-bold">Transportation</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">🏨</div>
+                    <h4 class="font-bold">Hospitality</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-3">🎮</div>
+                    <h4 class="font-bold">Entertainment</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Join Our Team</h2>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+          Be part of a dynamic team that's shaping the future of technology. We're always looking for talented individuals who are passionate about innovation.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Why Work at TYNATO?</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <span class="text-3xl mr-4">🌟</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Career Growth Opportunities</h4>
+                <p class="text-gray-600">We invest in our team's professional development with continuous learning programs, certifications, mentorship opportunities, and clear career progression paths.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-3xl mr-4">💼</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Competitive Benefits Package</h4>
+                <p class="text-gray-600">Comprehensive health insurance, dental and vision coverage, retirement plans with company matching, performance bonuses, and annual salary reviews.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-3xl mr-4">🏠</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Flexible Work Environment</h4>
+                <p class="text-gray-600">Remote work options, flexible hours, work-from-anywhere policy for certain roles, and generous paid time off to maintain work-life balance.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-3xl mr-4">🚀</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Cutting-Edge Projects</h4>
+                <p class="text-gray-600">Work on innovative solutions using the latest technologies like AI, blockchain, cloud computing, and more. Every project is an opportunity to learn and grow.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-3xl mr-4">🤝</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Collaborative Culture</h4>
+                <p class="text-gray-600">Work in a supportive environment where ideas are valued, creativity is encouraged, and teamwork is celebrated. Regular team building activities and social events.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-3xl mr-4">🎓</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Learning & Development</h4>
+                <p class="text-gray-600">Access to online courses, conference tickets, workshops, tech talks, and a dedicated budget for professional development and certifications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold mb-6">Current Openings</h3>
+          <div class="space-y-4">
+            <div class="border-l-4 border-blue-600 pl-4 py-2">
+              <h4 class="font-bold text-lg mb-1">Full Stack Developer Internship</h4>
+              <p class="text-gray-600 mb-2">Remote • Full-time •  Freshers</p>
+              <p class="text-gray-600 text-sm mb-3">Lead development of scalable web applications using modern tech stack. Mentor junior developers and contribute to architectural decisions.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+              </div>
+            </div>
+            <div class="border-l-4 border-green-600 pl-4 py-2">
+              <h4 class="font-bold text-lg mb-1">UI/UX Designer Internship</h4>
+              <p class="text-gray-600 mb-2">Hybrid • Full-time • Freshers</p>
+              <p class="text-gray-600 text-sm mb-3">Create beautiful and intuitive user interfaces. Conduct user research and translate insights into compelling designs.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Figma</span>
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Adobe XD</span>
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Prototyping</span>
+              </div>
+            </div>
+            <div class="border-l-4 border-purple-600 pl-4 py-2">
+              <h4 class="font-bold text-lg mb-1">Digital Marketing Internship</h4>
+              <p class="text-gray-600 mb-2">Remote • Full-time •  Freshers</p>
+              <p class="text-gray-600 text-sm mb-3">We're looking for a passionate and creative Digital Marketing Intern to join our team. This role is perfect for a student or recent graduate eager to gain hands-on experience in a fast-paced environment. You'll work closely with our marketing team, contributing to real-world campaigns and learning a wide range of skills.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">SEO</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Meta Ads</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Communication & Copywriting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+              <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-8 sm:p-12 text-center shadow-lg">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-4">How to Apply</h3>
+                <p class="mb-6 max-w-3xl mx-auto text-lg">
+                    Interested in joining our team? Send your resume, portfolio, and a cover letter explaining why you'd be a great fit to <strong>support@tynato.com</strong> with the position title in the subject line. We review all applications carefully and will contact qualified candidates within two weeks.
+                </p>
+                <p class="text-sm opacity-90 mb-4">
+                    TYNATO is an equal opportunity employer committed to diversity and inclusion. We welcome applications from all qualified candidates regardless of race, gender, age, religion, identity, or experience level.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+                    <a href="mailto:careers@tynato.com" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        Email Your Resume
+                    </a>
+                </div>
+            </div>
+   <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    Let's discuss how we can help transform your business with innovative technology solutions. We're here to answer your questions and start your digital transformation journey.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <form action="https://formspree.io/f/mldpbvbq" method="POST" class="bg-gray-50 p-8 rounded-lg shadow-md">
+
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1  (607) 297-0320" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <label for="company" class="block text-gray-700 font-semibold mb-2">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-semibold mb-2">Service Interested In *</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white">
+                                <option>Software Development</option>
+                                <option>Cloud Solutions</option>
+                                <option>Mobile App Development</option>
+                                <option>UI/UX Design</option>
+                                <option>Cybersecurity</option>
+                                <option>Data Analytics & AI</option>
+                                <option>IT Consulting</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="budget" class="block text-gray-700 font-semibold mb-2">Project Budget</label>
+                            <select id="budget" name="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white">
+                                <option>Less than $10,000</option>
+                                <option>$10,000 - $25,000</option>
+                                <option>$25,000 - $50,000</option>
+                                <option>$50,000 - $100,000</option>
+                                <option>$100,000+</option>
+                                <option>Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements and goals..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md">
+                            Send Message
+                        </button>
+                        <p class="text-sm text-gray-500 mt-4 text-center">We'll respond within 24 hours</p>
+                    </form>
+                </div>
+                <div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <span class="text-blue-600 text-3xl mr-4">📍</span>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Headquarters</h4>
+                                    <p class="text-gray-600">1708 lookout drive, Apt 9314, Garland, TX 75044, USA
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-blue-600 text-3xl mr-4">🏢</span>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Regional Office</h4>
+                                    <p class="text-gray-600">11th Cross East, Thillai Nagar, Tiruchirappalli, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-blue-600 text-3xl mr-4">📧</span>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Email</h4>
+                    
+                                    <p class="text-gray-600">Support: <a href="mailto:support@tynato.com" class="text-blue-600 hover:underline">support@tynato.com</a></p>
+                
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-blue-600 text-3xl mr-4">📞</span>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Phone</h4>
+                                    <p class="text-gray-600">USA: +1  (607) 297-0320</p>
+                                    <p class="text-gray-600">UAE: +971 56 922 8625</p>
+                                    <p class="text-gray-600">INDIA: +91 9585717122</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-blue-600 text-3xl mr-4">🕒</span>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Business Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 24/7</p>
+                                    <p class="text-gray-600">Saturday: 24/7</p>
+                                    <p class="text-gray-600">Sunday: Closed</p>
+                                    <p class="text-gray-600 mt-2 font-semibold">24/7 Support Available</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-blue-600 text-3xl mr-4">🌐</span>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Follow Us</h4>
+                                    <div class="flex flex-wrap gap-3 mt-2">
+                                        <a href="https://www.linkedin.com/company/tynato/" class="text-blue-600 hover:text-blue-800 font-semibold">LinkedIn</a>
+                                       
+                                        <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">Facebook</a>
+                                        <a href="https://www.instagram.com/tynato.official" class="text-blue-600 hover:text-blue-800 font-semibold">Instagram</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center shadow-md">
+                        <div class="text-center">
+                            <span class="text-6xl">🗺️</span>
+                            <p class="text-gray-700 mt-3 font-bold text-lg">Our Location</p>
+                            <p class="text-gray-600">Texas auxtin</p>
+                            <p class="text-gray-500 text-sm mt-2">Interactive map placeholder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">TYNATO</h3>
+          <p class="text-gray-400 mb-4">
+            Transforming businesses through innovative IT solutions and cutting-edge product development.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+            
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-lg">Services</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-white transition">Software Development</a></li>
+            <li><a href="#services" class="hover:text-white transition">Cloud Solutions</a></li>
+            <li><a href="#services" class="hover:text-white transition">Mobile Apps</a></li>
+            <li><a href="#services" class="hover:text-white transition">UI/UX Design</a></li>
+            <li><a href="#services" class="hover:text-white transition">Cybersecurity</a></li>
+            <li><a href="#services" class="hover:text-white transition">Data Analytics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-lg">Company</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+            <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
+            <li><a href="#careers" class="hover:text-white transition">Careers</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4 text-lg">Newsletter</h4>
+          <p class="text-gray-400 mb-4">Subscribe to get the latest updates, insights, and industry news.</p>
+          <form class="flex flex-col sm:flex-row gap-2">
+            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-lg w-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <button type="submit" class="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700 transition whitespace-nowrap">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+          <p class="mb-4 md:mb-0">&copy; 2025 TYNATO. All rights reserved.</p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+            <a href="#" class="hover:text-white transition">Cookie Policy</a>
+            <a href="#" class="hover:text-white transition">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            if (mobileMenu.style.maxHeight === '500px') {
+                mobileMenu.style.maxHeight = '0';
+            } else {
+                mobileMenu.style.maxHeight = '500px';
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.maxHeight = '0';
+            });
+        });
+        
+        // Active navigation link
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section[id]');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
